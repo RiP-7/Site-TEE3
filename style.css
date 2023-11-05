@@ -303,4 +303,10 @@ nav ul li{
     display: block;
     margin: 25px;
 }
+nav ul .fa-xmark{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
 }
