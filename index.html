@@ -14,17 +14,17 @@
     <div class="container">
     <nav>
         <img src="Images/logo fin.png" class="logo">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
             <!--<li><a href="#">Skill set</a></li>-->
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
 
-            <i class="fas fa-xmark" style="color: #ffffff;"></i>
+            <i class="fas fa-xmark" style="color: #ffffff;" onclick="closemenu()"></i>
 
         </ul> 
-        <i class="fas fa-bars" style="color: #ffffff;"></i>
+        <i class="fas fa-bars" style="color: #ffffff;" onclick="openmenu()"></i>
     </nav>
 <div class="header-text">
 <p> Hey there!</p>
@@ -148,7 +148,7 @@
             <div class="contact-right">
 <form>
     <input type="text" name="Name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
     <textarea name="Message" rows="6" placeholder="If you want to leave me a message or reach out:)"></textarea>
     <button type="submit" class="button">Send</button>
 </form>
@@ -160,6 +160,17 @@
         <p> Copyright by Riya Parekh A007 </p>
     </div>
 </div>
+
+
+<script>
+ var sidemenu= document.getElementById("sidemenu");
+function openmenu(){
+        sidemenu.style.right = "0"
+    }
+function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
 
 </body>
 </html>
