@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Parekh Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f886dfb1ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <img src="Images/logo.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <!--<li><a href="#">Skill set</a></li>-->
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact me</a></li>
+
+            <i class="fas fa-xmark" style="color: #ffffff;"></i>
+
+        </ul> 
+        <i class="fas fa-bars" style="color: #ffffff;"></i>
+    </nav>
+<div class="header-text">
+<p> UI UX Dude</p>
+<h1>Hi I am <span>Riya Parekh</span>, an <br> artist, a designer.</h1>
+</div>
+    </div>
+    </div>
+
+<!--About section-->
+
+<div id="About">
+<div class= "container">
+    <div class= "row">
+        <div class= "about-col-1">
+<img src="Images/user.png" alt="Me">
+        </div>
+
+        <div class= "about-col-2">
+<h1 class="subtitle">About Me</h1>
+<p> Lorem ipsum dolor sit amet c Similique doloremque,
+     ad sed quibusdam et rerum omnis?</p>
+
+
+
+<!--about section tabs- skills, eeperience and education-->
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+    <p class="tab-links"onclick="opentab('experience')"> Experience</p>
+    <p class="tab-links"onclick="opentab('education')"> Education</p>
+</div>
+
+<!--skills-->
+<div class="tab-contents active-tab" id="skills"> 
+<ul>
+    <li> <span> UI/UX </span><br> Designing web interfaces</li>
+    <li> <span> Photography</span><br>Capturing captivting moments all around</li>
+    <li> <span> Illustration</span><br> Imagining visual stories to bring ideas to life</li>
+    <li> <span> Branding </span><br> Creating the visual and emotional identity of a company</li>
+</ul>
+</div>
+
+<!--experience-->
+<div class="tab-contents" id="experience"> 
+    <ul>
+        <li> <span> Teaching </span><br> Guiding young mind's creativity through the art of expression</li>
+        <li> <span> Illustration</span><br> Imagining visual stories to bring ideas to life</li>
+    </ul>
+    </div>
+
+<!--education-->
+    <div class="tab-contents" id="education"> 
+        <ul>
+            <li> <span> Utpal Shanghvi Global School </span><br> Upto grade 10, specialized in science and Art and Design</li>
+            <li> <span> Mithibai College of Arts </span><br> Pursued humanities in junior college</li>
+            <li> <span> B. Des degree from NMIMS School of Design </span><br> Humanising technology course</li>
+        </ul>
+        </div>
+
+     </div>
+   </div>
+ </div>
+</div>
+  
+
+
+<!--Projects-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png" alt="Project1">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>yada yada lol</p>
+                    <!--<a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>-->
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/work-2.png" alt="Project1">
+                <div class="layer">
+                    <h3>Spotify ad</h3>
+                    <p>yada yada lol</p>
+                    <!--<a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>-->
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/work-3.png" alt="Project1">
+                <div class="layer">
+                    <h3>Throwback Cafe</h3>
+                    <p>yada yada lol</p>
+                    <!--<a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>-->
+                </div>
+            </div>
+            <a href="https://www.instagram.com/art_by_riyaa/" class="btn"> See more </a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Contact Section-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+<h1 class="subtitle">Contact Me</h1>
+<p>allaccwork7@gmail.com</p>
+<p>+91 7718806656</p>
+<div class="social-icons">
+    <a href="https://www.instagram.com/art_by_riyaa/" class="button"> Instagram </a>
+    <a href="https://www.behance.net/riyaparekh7" class="button"> Behance </a>
+    <a href="https://www.linkedin.com/in/riya-parekh-495886247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="button"> LinkedIn </a>
+</div>
+<a href="Images/my-cv.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+<form>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="Message" rows="6" placeholder="If you want to leave me a message or reach out:)"></textarea>
+    <button type="submit" class="button">Send</button>
+</form>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright by Riya Parekh A007 </p>
+    </div>
+</div>
+
+
+<!--<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>-->
+
+</body>
+</html>
